@@ -17,7 +17,7 @@ document.addEventListener('keypress', function(event) {
     console.log(`Character pressed: ${String.fromCharCode(event.charCode)}`);
 });
 
-//Form Event
+//Form Events
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('demoForm');
     const formMsg = document.getElementById('formMessage');
@@ -27,3 +27,14 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault(); 
         formMsg.textContent = "Form successfuly submited";
     });
+
+//Focus and Blur Events
+var focusInput = document.getElementById('focusInput');
+var focusMsg = document.getElementById('focusMessage');
+
+focusInput.addEventListener('focus', () {
+    focusMsg.textContent = "Input is focused";
+});
+focusInput.addEventListener('blur', () {
+    focusMsg.textContent = "Get some glasses";
+});
