@@ -38,3 +38,12 @@ focusInput.addEventListener('focus', () {
 focusInput.addEventListener('blur', () {
     focusMsg.textContent = "Get some glasses";
 });
+
+//Delegaton Event
+const delegateContainer = document.getElementById('delegationContainer');
+const delegateMsg = document.getElementById('delegationMessage');
+delegateContainer.addEventListener('click', function(event) {
+    if (event.target.tagName === 'Button') {
+        delegateMsg.textContent = 'You clicked: ' + event.target.textContent); 
+    }
+});
