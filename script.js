@@ -5,10 +5,10 @@ var mouseBtn = document.getElementById('mouseButton');
 var mouseMsg = document.getElementById('mouseMessage');
 
 mouseBtn.addEventListener('mouseenter', function () {
-    mouseMsg.textContent = "You're blocking the light";
+    mouseMsg.textContent = "Welp thats it!";
 });
 mouseBtn.addEventListener('mouseleave', function () {
-    mouseMsg.textContent = "Wait come back!";
+    mouseMsg.textContent = "Come on Over!";
 });
 
 // Keyboard Events
